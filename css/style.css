@@ -1,0 +1,88 @@
+/* === Base styles === */
+
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    margin:0;
+}
+
+img {
+    height: 100%;
+}
+
+/* === Colour scheme === */
+
+body {
+    --background-color: #fcc;
+    --accent-color: #f99;
+    --border-color: #d88;
+    --button-hover-color: #fcc;
+    --foreground-color: #000;
+}
+body.dark-mode {
+    --background-color: #404;
+    --accent-color: #202;    
+    --border-color: #505;
+    --button-hover-color: #313;
+    --foreground-color: #dbd;
+}
+
+/* === Navigation bar === */
+
+#nav-bar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: var(--accent-color);
+    border-bottom: var(--border-color) solid 5px;
+}
+#nav-bar > .nav-bar-entry {
+    display: inline-block;
+    height: 100%;
+}
+#nav-bar img {
+    user-select: none;
+}
+
+#dark-mode-button {
+    position: absolute;
+    right: 0;
+}
+
+#nav-options {
+    position: absolute;
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    padding: 0;
+}
+#nav-options > .nav-option {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    transition: .1s;
+    text-align: center;
+    font-size: 40px;
+
+    > .nav-option-label {
+        margin: 27px auto;
+        user-select: none;
+    }
+}
+#nav-options > .nav-option:hover {
+    background-color: var(--button-hover-color);
+
+    > .nav-option-label {
+        transition: .1s;
+        transform: rotate(-3deg);
+    }
+}
+
+/* === Miscellaneous === */
+
+.selectable-image {
+    transition: transform .2s;
+}
+.selectable-image:hover {
+    transform: rotate(-15deg);
+}
