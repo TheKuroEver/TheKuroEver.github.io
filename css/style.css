@@ -33,7 +33,7 @@ body.dark-mode {
 #nav-bar {
     width: 100%;
     height: 100px;
-    position: fixed;
+    position:relative;
     top: 0;
     background-color: var(--accent-color);
     border-bottom: var(--border-color) solid 5px;
