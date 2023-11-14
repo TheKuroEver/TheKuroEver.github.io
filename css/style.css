@@ -78,6 +78,7 @@ body.dark-mode {
     > .nav-option-label {
         transition: .1s;
         transform: rotate(-3deg) scale(1.1);
+        pointer-events: none;
     }
 }
 
