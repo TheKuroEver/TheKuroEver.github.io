@@ -16,7 +16,8 @@ body {
     --background-color: #fcc;
     --accent-color: #f99;
     --border-color: #d88;
-    --button-hover-color: #fcc;
+    --button-hover-color: #fbb;
+    --button-hover-border-color: #fdd;
     --foreground-color: #000;
 }
 body.dark-mode {
@@ -60,21 +61,23 @@ body.dark-mode {
     display: inline-block;
     width: 25%;
     height: 100%;
-    transition: .1s;
+    transition: background-color .1s;
     text-align: center;
     font-size: 40px;
 
     > .nav-option-label {
-        margin: 27px auto;
+        margin: 25px auto;
         user-select: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
     }
 }
 #nav-options > .nav-option:hover {
     background-color: var(--button-hover-color);
+    border-bottom: var(--button-hover-border-color) solid 5px;
 
     > .nav-option-label {
         transition: .1s;
-        transform: rotate(-3deg);
+        transform: rotate(-3deg) scale(1.1);
     }
 }
 
