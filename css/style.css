@@ -22,7 +22,7 @@ body {
 }
 body.dark-mode {
     --background-color: #404;
-    --accent-color: #202;    
+    --accent-color: #202;
     --border-color: #505;
     --button-hover-color: #313;
     --foreground-color: #dbd;
@@ -63,11 +63,11 @@ body.dark-mode {
     height: 100%;
     transition: background-color .1s;
     text-align: center;
-    font-size: 40px;
-
+    
     > .nav-option-label {
         margin: 25px auto;
         user-select: none;
+        font-size: min(40px, 3vw);
         font-family:Verdana, Geneva, Tahoma, sans-serif
     }
 }
@@ -79,6 +79,18 @@ body.dark-mode {
         transition: .1s;
         transform: rotate(-3deg) scale(1.1);
         pointer-events: none;
+    }
+}
+@media (max-width: 800px) {
+    #nav-bar {
+        height: 50px
+    }
+    #nav-options {
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        > .nav-option > .nav-option-label {
+            margin: 15px auto;
+        }
     }
 }
 
