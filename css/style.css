@@ -58,22 +58,27 @@ body.dark-mode {
     padding: 0;
 }
 #nav-options > .nav-option {
+    border-bottom: var(--border-color) solid 5px;
     display: inline-block;
     width: 25%;
     height: 100%;
-    transition: background-color .1s;
-    text-align: center;
+    transition: border-bottom-color .1s, background-color .1s;
+    position: relative;
     
     > .nav-option-label {
-        margin: 25px auto;
-        user-select: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
         font-size: min(40px, 3vw);
-        font-family:Verdana, Geneva, Tahoma, sans-serif
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        user-select: none;
     }
 }
 #nav-options > .nav-option:hover {
     background-color: var(--button-hover-color);
-    border-bottom: var(--button-hover-border-color) solid 5px;
+    border-bottom-color: var(--button-hover-border-color);
 
     > .nav-option-label {
         transition: .1s;
@@ -88,9 +93,6 @@ body.dark-mode {
     #nav-options {
         width: calc(100% - 100px);
         margin-left: 50px;
-        > .nav-option > .nav-option-label {
-            margin: 15px auto;
-        }
     }
 }
 
