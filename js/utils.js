@@ -8,7 +8,7 @@ function toggleDarkMode() {
 }
 
 $(() => {
-    $.get("navigation bar.html", function(data) {
+    $.get("templates/navigation bar.html", function(data) {
         $("#nav-bar-placeholder").replaceWith(data);
     });
 });
