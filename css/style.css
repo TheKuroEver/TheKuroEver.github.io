@@ -37,3 +37,11 @@ body.dark-mode {
 .selectable-image:hover {
     transform: rotate(-15deg);
 }
+
+.centered-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    margin: 0;
+}
