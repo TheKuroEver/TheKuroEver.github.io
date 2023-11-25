@@ -38,22 +38,35 @@ body.dark-mode {
 /* === Main Text Content === */
 
 #main-text-area {
-    margin: 0 250px;
+    margin: 0 auto;
+    width: min(90%, 1500px);
 }
 
 .text-plate {
     background-color: var(--accent-color);
     font-size: 20px;
-    width: 600px;
+    width: 50%;
     padding: 5px 10px 10px;
+    margin: 10px;
     text-align: center;
     border-radius: 10px;
+}
+
+.plate-holder {
+    background-color: #f885;
+    border-radius: 25px;
+    border: solid var(--background-color) 10px;
+    padding: 10px;
+}
+.dark-mode .plate-holder {
+    background-color: #2028;
 }
 
 /* === Miscellaneous === */
 
 .selectable-image {
     transition: transform .2s;
+    cursor: pointer;
 }
 .selectable-image:hover {
     transform: rotate(-15deg);

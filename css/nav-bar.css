@@ -33,6 +33,7 @@
     height: 100%;
     transition: border-bottom-color .1s, background-color .1s;
     position: relative;
+    cursor: pointer;
     
     > .nav-option-label {
         font-size: min(40px, 3vw);
@@ -46,7 +47,6 @@
     > .nav-option-label {
         transition: .1s;
         transform: rotate(-3deg) scale(1.1);
-        pointer-events: none;
     }
 }
 @media (max-width: 800px) {
