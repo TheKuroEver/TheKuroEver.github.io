@@ -14,7 +14,7 @@ body.dark-mode {
 }
 
 img {
-    height: 100%;
+    width: 100%;
 }
 
 /* === Colour scheme === */
@@ -42,24 +42,44 @@ body.dark-mode {
     width: min(90%, 1500px);
 }
 
-.text-plate {
-    background-color: var(--accent-color);
-    font-size: 20px;
-    width: 50%;
-    padding: 5px 10px 10px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-}
-
 .plate-holder {
     background-color: #f885;
     border-radius: 25px;
     border: solid var(--background-color) 10px;
     padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 .dark-mode .plate-holder {
     background-color: #2028;
+}
+
+.plate-holder-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-plate-holder {
+    flex: 2;
+}
+.image-plate-holder {
+    flex: 1
+}
+
+.text-plate {
+    background-color: var(--accent-color);
+    font-size: 20px;
+    padding: 5px 10px 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.image-plate {
+    border: solid var(--accent-color) 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 /* === Miscellaneous === */

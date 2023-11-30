@@ -13,6 +13,7 @@
 }
 #nav-bar img {
     user-select: none;
+    height: 100%;
 }
 
 #dark-mode-button {
