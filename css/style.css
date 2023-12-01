@@ -26,6 +26,7 @@ body {
     --button-hover-color: #fbb;
     --button-hover-border-color: #fdd;
     --foreground-color: #000;
+    --shadow-color: #d88;
 }
 body.dark-mode {
     --background-color: #404;
@@ -33,6 +34,7 @@ body.dark-mode {
     --border-color: #505;
     --button-hover-color: #313;
     --foreground-color: #dbd;
+    --shadow-color: #180018;
 }
 
 /* === Main Text Content === */
@@ -46,13 +48,27 @@ body.dark-mode {
     background-color: #f885;
     border-radius: 25px;
     border: solid var(--background-color) 10px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px var(--shadow-color) inset, -5px -5px 5px var(--shadow-color) inset;
 }
 .dark-mode .plate-holder {
     background-color: #2028;
+}
+
+@media (max-width: 1200px) {
+    .plate-holder {
+        font-size: min(20px, 1.5cqw);
+    }
+}
+@media (max-width: 800px) {
+    .plate-holder {
+        flex-direction: column;
+        font-size: 15px;
+    }
 }
 
 .plate-holder-half {
@@ -70,7 +86,6 @@ body.dark-mode {
 
 .text-plate {
     background-color: var(--accent-color);
-    font-size: 20px;
     padding: 5px 10px 10px;
     margin: 10px;
     text-align: center;
@@ -80,6 +95,9 @@ body.dark-mode {
     border: solid var(--accent-color) 10px;
     border-radius: 20px;
     margin: 10px;
+}
+.text-plate, .image-plate {
+    box-shadow: 0 0 5px 5px var(--shadow-color);
 }
 
 /* === Miscellaneous === */
