@@ -27,8 +27,9 @@
     margin-left: 100px;
     padding: 0;
 }
-#nav-options > .nav-option {
+#nav-options .nav-option {
     border-bottom: var(--border-color) solid 5px;
+    color: var(--foreground-color);
     display: inline-block;
     width: 25%;
     height: 100%;
@@ -41,7 +42,7 @@
         user-select: none;
     }
 }
-#nav-options > .nav-option:hover {
+#nav-options .nav-option:hover {
     background-color: var(--button-hover-color);
     border-bottom-color: var(--button-hover-border-color);
 
