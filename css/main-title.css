@@ -12,6 +12,7 @@
     padding: 10px 20px 20px;
     border-radius: 50px;
     text-align: center;
+    box-shadow: 0 0 5px 5px var(--shadow-color);
 }
 
 @media (max-width: 800px) {
