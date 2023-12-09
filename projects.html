@@ -14,20 +14,29 @@
     <div id="main-text-area">
         <div class="plate-holder">
             <div class="plate-holder-half text-plate-holder">
-                <p class="text-plate">This is where my projects will go</p>
-                <p class="text-plate">There are still just parrots here for now :&rpar;</p>   
-            </div>
-            <div class="plate-holder-half image-plate-holder">
-                <div class="image-plate"><img src="img/Parrot.png" alt="Parrot"></div>
+                <p class="text-plate">These are my past and current projects. (unfinished)</p>
             </div>
         </div>
         <div class="plate-holder">
-            <div class="plate-holder-half">
-                <p class="text-plate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dolor distinctio consequatur odit nam optio cum id reprehenderit obcaecati voluptatem soluta, in perferendis
-                    impedit tempora tenetur blanditiis quasi, error saepe.</p>    
+            <div class="plate-holder-half text-plate-holder">
+                <h1 class="text-plate">KTaNE Mods</h1>
+                <p class="text-plate"><a href="https://keeptalkinggame.com" target="_blank">Keep Talking and Nobody Explodes</a> (KTaNE) is a multiplayer co-op game developed by Steel Crate Games
+                    about defusing bombs. This is done by solving so-called "modules" which are effectively these small interactive puzzles. The modules that come with the base game include Morse
+                    Code, Maze, and Simon Says.</p>
+                <p class="text-plate">There is a small but active modding community surrounding the game, who contribute modded modules for others to play. These modules are made using the Unity game
+                    engine with the C# language. I have made several modded modules of my own, most notably Procedural Maze (top) and Orientation Hypercube (bottom).</p>
+                <p class="text-plate">Procedural Maze simulates a maze whose walls are generated procedurally based on where the player moves and the current seed, which changes when new walls are
+                    generated. The most challenging part of the implementation process was making sure the maze was always able to be solved, since the procedural nature of the maze makes it possible
+                    for the player to trap themselves. To do this, I implemented depth-first-search-approach algorithm to attempt solve the maze on generation, and regenerate if unable.</p>
+                <p class="text-plate">The goal of Orientation Hypercube is to apply rotations to a 4-dimensional hypercube such that it ends up in a target orientation. The most challenging part of
+                    the making of this module was creating dynamic meshes to render the 3-dimensional 'faces' of the hypercube. As with Procedural Maze, this module has an autosolver which tries to
+                    solve the module in a reasonable amount of moves. In the GIF, it took 11 moves.</p>
+                <p class="text-plate">For more of on my KTaNE modded modules and more details on their implementation, as well as links to repositories etc., see <a href="">my KTaNE Modules</a>. (to
+                    be added soon)</p>
             </div>
-            <div class="plate-holder-half">
-                <div class="image-plate"><img src="img/Parrot.png" alt="Parrot"></div>
+            <div class="plate-holder-half image-plate-holder">
+                <div class="image-plate"><img src="img/Modules/GIF/Procedural Maze.gif" alt="My module Procedural Maze being autosolved"></div>
+                <div class="image-plate"><img src="img/Modules/GIF/Orientation Hypercube.gif" alt="My module Orientation Hypercube being autosolved"></div>
             </div>
         </div>
     </div>
