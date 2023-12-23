@@ -1,10 +1,14 @@
 let darkModeEnabled = false;
 function toggleDarkMode() {
     darkModeEnabled = !darkModeEnabled;
-    if (darkModeEnabled)
+    if (darkModeEnabled) {
         document.body.classList.add("dark-mode");
-    else
+        $("#dark-mode-button > img").attr("src", "../img/Light%20mode.svg")        
+    }
+    else {
         document.body.classList.remove("dark-mode");
+        $("#dark-mode-button > img").attr("src", "../img/Dark%20mode.svg")           
+    }
 }
 
 function replacePlaceholders() {
